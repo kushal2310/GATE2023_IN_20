@@ -70,11 +70,14 @@ with initial conditions \(x(0) = 1\) and \(\dot{x} (0) = 0\) is: \quad \brak{GAT
 \begin{align}
     \implies \frac{d^2 x(t)}{dt^2} = -k\frac{dx(t)}{dt}
 \end{align}\\
+
 Taking Laplace transform on both sides,\\
 \begin{align}
-\label{L(y'')}\frac{d^2x\brak{t}}{dx^2} &\system{L} s^2X(s)-sx(0)-\dot{x}(0)\\
-\label{L(y')}\frac{dx\brak{t}}{dx} &\system{L} sX(s)-x(0)
+\label{eq:gate2023.in.20.2}\frac{d^2x\brak{t}}{dx^2} &\system{L} s^2X(s)-sx(0)-\dot{x}(0)\\
+\label{eq:gate2023.in.20.3}\frac{dx\brak{t}}{dx} &\system{L} sX(s)-x(0)
 \end{align}
+
+From Table ,\eqref{eq:gate2023.in.20.2} , \eqref{eq:gate2023.in.20.3} 
 \begin{align}
 s^2 X\brak{s} - sx\brak{0} - \dot{x}\brak{0} &= -k\brak{sX\brak{s} - x\brak{0}} \\
 s^2 X\brak{s} - s &= -k\brak{sX\brak{s}-1} \\
@@ -82,7 +85,7 @@ sX\brak{s}\brak{s+k}&=\brak{s+k}\\
      s &\neq -k\\
      X\brak{s}&=\frac{1}{s}  \\
      x\brak{t}&=u\brak{t}\\
-     t\geq 0\ \implies x\brak{t}&=1
+      \implies x\brak{t}&=1 \quad \brak{t\geq 0}
 \end{align}\\
 \pagebreak
 \begin{figure}[h]
