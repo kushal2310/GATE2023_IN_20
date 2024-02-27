@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.21)  27 FEB 2024 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.21)  27 FEB 2024 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,28 @@ entering extended mode
 (./main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 l
+     et\negmedspace\undefined
+? 
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.1 let\negmedspace\undefined
+                             
+? 
 (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--201
+[] 
+ []
+
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -105,10 +126,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEquantizemultiple=\count198
 \@IEEEquantizeboxA=\box50
 \@IEEEtmpitemindent=\dimen160
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \IEEEPARstartletwidth=\dimen161
 \c@IEEEbiography=\count199
 \@IEEEtranrubishbin=\box51
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -1304,7 +1327,7 @@ l.78 \end{align}
 l.78 \end{align}
                 
 ? 
-<figs/x(t)_vs_t.png, id=9, 462.528pt x 346.896pt>
+<figs/x(t)_vs_t.png, id=13, 462.528pt x 346.896pt>
 File: figs/x(t)_vs_t.png Graphic file (type png)
 <use figs/x(t)_vs_t.png>
 Package pdftex.def Info: figs/x(t)_vs_t.png  used on input line 93.
@@ -1314,20 +1337,19 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 93--94
 [][][] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[2
 
 
- <./figs/x(t)_vs_t.png>]
-(./main.aux)
+ <./figs/x(t)_vs_t.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29573 strings out of 478287
- 582697 string characters out of 5849289
- 845822 words of memory out of 5000000
+ 29570 strings out of 478287
+ 582674 string characters out of 5849289
+ 837727 words of memory out of 5000000
  47114 multiletter control sequences out of 15000+600000
- 547430 words of font info for 200 fonts, out of 8000000 for 9000
+ 545816 words of font info for 197 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,12n,96p,408b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1338,10 +1360,10 @@ fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 61302 bytes).
+Output written on main.pdf (2 pages, 61558 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
