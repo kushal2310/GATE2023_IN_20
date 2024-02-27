@@ -61,26 +61,35 @@
 \maketitle
 \noindent \textbf{Q 20 :} The solution \(x(t)\), \(t \geq 0\), to the differential equation
 $\ddot{x} = -k\dot{x} , k > 0$
-with initial conditions \(x(0) = 1\) and \(\dot{x} (0) = 0\) is: \\
+with initial conditions \(x(0) = 1\) and \(\dot{x} (0) = 0\) is: \quad \brak{GATE ~2023  , IN} \\
+
 \noindent \textbf{Ans}:\\ \\
 \begin{table}[h]
 \input{tables/tables.tex}
 \end{table}
 \begin{align}
     \implies \frac{d^2 x(t)}{dt^2} = -k\frac{dx(t)}{dt}
-\end{align}
-
-
-Taking Laplace transform on both sides,
-\begin{align}
-    s^2 X\brak{s} - sX\brak{0} - X'\brak{0} &= -k\brak{sX\brak{s} - X\brak{0}} \\
-    \brak{s^2 + k}X\brak{s} - sX\brak{0} &= -kX'\brak{0} + X\brak{0} \\
-    \brak{s+k}X\brak{s} + sX'\brak{s} &= X'\brak{0} + X\brak{0}
 \end{align}\\
-Taking inverse Laplace transform,\\
+Taking Laplace transform on both sides,\\
 \begin{align}
-    \implies x\brak{t} = 1
+\label{L(y'')}\frac{d^2x\brak{t}}{dx^2} &\system{L} s^2X(s)-sx(0)-\dot{x}(0)\\
+\label{L(y')}\frac{dx\brak{t}}{dx} &\system{L} sX(s)-x(0)
 \end{align}
+\begin{align}
+s^2 X\brak{s} - sx\brak{0} - \dot{x}\brak{0} &= -k\brak{sX\brak{s} - x\brak{0}} \\
+s^2 X\brak{s} - s &= -k\brak{sX\brak{s}-1} \\
+sX\brak{s}\brak{s+k}&=\brak{s+k}\\
+     s &\neq -k\\
+     X\brak{s}&=\frac{1}{s}  \\
+     x\brak{t}&=u\brak{t}\\
+     t\geq 0\ \implies x\brak{t}&=1
+\end{align}\\
+\pagebreak
+\begin{figure}[h]
+    %\caption{ Plot of $x\brak{t}$ v/s t}
+    \includegraphics[width=0.5\textwidth]{figs/x(t)_vs_t.png}\label{fig:stem-plot}
+    \caption{Stem Plot of $x\brak{t}$ v/s t}
+\end{figure}
 
 
 
